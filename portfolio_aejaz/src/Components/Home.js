@@ -107,7 +107,7 @@ const Home = () => {
                 
                 <div className="imgBox">
                     
-                        <img  className="profile__img" src="myPic.jpg" alt="Aejaz Ahmed"/>
+                        <img  className="profile__img" src="imgSnip.png" alt="Aejaz Ahmed"/>
                     
                 </div>
             </div>
