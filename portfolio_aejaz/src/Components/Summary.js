@@ -29,21 +29,21 @@ margin-top:200px;
 
 //
 `
-const GitImg=styled.div`
-display:flex;
-flex-direction:column;
-width:100%;
-height:fit-content;
-justify-content:center;
-align-items:center;
-margin-top:100px;
-img{
-    margin-top:-50px;
-    padding:10%;
-    border-radius:15px;
-    width:100%;
-}
-`
+// const GitImg=styled.div`
+// display:flex;
+// flex-direction:column;
+// width:100%;
+// height:fit-content;
+// justify-content:center;
+// align-items:center;
+// margin-top:100px;
+// img{
+//     margin-top:-50px;
+//     padding:5%;
+//     border-radius:15px;
+//     width:100%;
+// }
+// `
 
 const Summary = () => {
 
@@ -67,10 +67,10 @@ const Summary = () => {
                 )}
         </Wrapper>   
        
-        <GitImg className="git_img">
+        {/* <GitImg className="git_img">
             <h1 style={{alignTextAlign: 'center'}}> Git</h1>
             <img  src="git_commits.png" alt="Git Commits"/>
-        </GitImg>
+        </GitImg> */}
         <div style={{borderTop: '2px solid #fff', marginLeft:"100px",marginTop:"20px", marginRight:"80px"}}></div>
        </>     
     )

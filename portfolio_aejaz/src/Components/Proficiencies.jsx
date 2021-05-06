@@ -43,7 +43,7 @@ flex-direction: column;
 //         align-items:center;
 //     }
 // }
-@media (max-width:600px){
+@media (max-width:640px){
     .technologies{
         
         flex-direction:column;

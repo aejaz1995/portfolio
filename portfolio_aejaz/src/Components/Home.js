@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from './Navbar';
+// import { Navbar } from './Navbar';
 import {ImLocation2,ImMobile2 } from "react-icons/im"
 import { MdEmail } from "react-icons/md"
 import styled from "styled-components"
@@ -19,10 +19,11 @@ postion:relative;
     width:100%;
 }
 .profile__img{
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     border-radius: 50% !important;
     border:10px solid #833ab4;
+    width:object-fit;
   
     }
     .info{
@@ -106,7 +107,7 @@ const Home = () => {
                 
                 <div className="imgBox">
                     
-                        <img  className="profile__img" src="pp.jpg" alt="Aejaz Ahmed"/>
+                        <img  className="profile__img" src="myPic.jpg" alt="Aejaz Ahmed"/>
                     
                 </div>
             </div>

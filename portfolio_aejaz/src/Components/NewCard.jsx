@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Link} from "react-router-dom"
 
 const Wrapper = styled.div`
+    background-color:white;
      &:hover{border:1px solid ${props=>props.border};}
     display:flex;
     flex-direction:column;
@@ -14,6 +15,13 @@ const Wrapper = styled.div`
 
     @media (max-width:360px){
         margin: 0px;
+    }
+    @media (max-width:640px){
+        margin: 5%;
+        margin-top:20px;
+        width:80%;
+        justify-content: center;
+        align-self: center;
     }
 
 
@@ -57,7 +65,7 @@ const Wrapper = styled.div`
 }
 `
 
-const NewCard = ({img,title,demo_link,github_link}) => {
+const NewCard = ({img, title, demo_link, github_link, description}) => {
     const openInNewTab =(url) => {
         const newTab = window.open(url,"_blank","noopener","noreferrer")
         if(newTab)
@@ -73,7 +81,7 @@ const NewCard = ({img,title,demo_link,github_link}) => {
                 </div>
                 <div className="description">
                     <h1>{title}</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorum odit quod! Tempora.</p>
+                    <p style={{display: 'flex',fontSize:"1rem"}}>{description}</p>
                 
                     <div className="gthub_n_demo">
                         <button><Link className="link"  onClick={()=>openInNewTab(github_link)}>Github</Link></button>
